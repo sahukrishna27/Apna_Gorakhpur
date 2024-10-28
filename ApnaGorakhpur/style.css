@@ -1,0 +1,1469 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    scroll-margin: 5rem;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+:root {
+    --font-heading-primary-desktop: 2.8rem;
+    --font-heading-secondary-desktop: 2.5rem;
+    --top-bottom-padding-big-desktop: 1rem;
+    --right-left-padding-big-desktop: 1.5rem;
+    --card-padding-mobile: 0.7rem;
+    --margin-top-desktop: 2rem;
+    --border-radius-card-mobile: 1rem;
+    --border-radius-card-desktop: 2.5rem;
+    --margin-homepage-heading: 1rem 0;
+    --gap-small: 1rem;
+    --gap-large: 2rem;
+}
+
+
+html {
+    background-color: #ececec;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.margin-top {
+    margin-top: 5rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-container {
+    justify-content: space-between;
+}
+
+.nav-bar .left,
+.nav-bar .right {
+    gap: 0.5rem;
+}
+.nav-bar .nav-logo{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1.25rem;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+}
+.left i {
+    font-size: 1rem;
+    background-color: white;
+}
+
+.hamburger {
+    background-color: rgb(255, 255, 255);
+    padding: .4rem .6rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.nav-bar .middle img {
+    height: 3.6vmin;
+
+}
+
+.nav-bar .middle {
+    display: none;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+
+
+
+/* when hover over menu bar */
+.left i:hover {
+    cursor: pointer;
+}
+
+.left img {
+
+    width: 4rem;
+    /* border-radius: 1rem; */
+}
+
+/* when hover over logo */
+.left img:hover {
+    cursor: pointer;
+}
+
+.right .language-button {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    color: #EC0332;
+    background-color: #ffffff;
+    gap: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 1.25rem;
+}
+
+.right .language-button:hover {
+    background-color: #E8DAFF;
+    cursor: pointer;
+}
+
+
+.right .language-button svg {
+    height: 0.9rem;
+    width: 1rem;
+}
+
+.right p {
+    font-size: 1rem;
+    font-weight: 410;
+}
+
+.right img {
+    width: 01rem;
+    border-radius: 2px;
+}
+
+.nav-container {
+    margin: 1rem auto;
+}
+
+.nav-bar .right .login-button {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: rgb(255, 255, 255)
+}
+
+/* when cursor over login button */
+.nav-bar .right .login-button:hover {
+    background-color: #FEDFE5;
+    cursor: pointer;
+}
+
+.nav-bar .right .login-button p {
+    color: #ff0000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-bar {
+    /* padding-top: 0.6rem; */
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: sticky;
+    top: 0rem;
+    /* border-bottom: 1px solid black; */
+    z-index: 3;
+
+}
+
+/* ====================sildeshow 1===================== */
+
+
+
+
+.welcome-section {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+.welcome-message-container {
+    /* margin: 1rem auto; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+
+
+
+
+.welcome-message h2 {
+    font-size: 5.8vmin;
+    /* margin-top: 2rem; */
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    margin: var(--margin-homepage-heading);
+    background-clip: text;
+    color: rgb(0, 0, 0);
+}
+
+
+.gradient {
+    background-image: linear-gradient(to right, #5A4BDA, #EB427E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.red {
+    color: #ED0331;
+}
+
+.welcome-message-heading {
+    gap: 0.5rem;
+}
+
+
+.welcome-message p {
+    font-weight: 600;
+    line-height: 1.5;
+    /* font-size: 3.7vmin; */
+    margin: 0 0.1rem;
+    text-align: center;
+    color: #21191B;
+    /* white-space: nowrap; */
+}
+
+.welcome-message img {
+    width: 90%;
+    border-radius: 0.7rem;
+    box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 2rem;
+}
+
+.introduction {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    background-color: #fcfbf8;
+    padding: 0.7rem;
+    border-radius: var(--border-radius-card-mobile);
+}
+
+.introduction-container {
+    flex-direction: column;
+    gap: var(--gap-small);
+}
+
+
+.introduction-container h2 {
+    margin: var(--margin-homepage-heading);
+    /* width: 90vmin; */
+    font-size: 1.9rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.introduction-container img {
+    width: 100%;
+}
+
+.introduction-container p {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+
+}
+
+.text-section h2 {
+    margin-bottom: 1rem;
+
+}
+
+/* -----------------popular attractions----------------------- */
+.places-container .swiper {
+    width: 100%;
+
+}
+
+.popular-attractions .places-wrapper .places-dp {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 1px 1px 10px 5px #f3f3f3;
+    border-radius: 0.7rem;
+    padding: 0.8rem;
+    margin: 0.9rem 0 0.9rem 0;
+    background-color: white;
+}
+
+.popular-attractions .places-main-content h2 {
+    font-size: 1rem;
+}
+
+.popular-attractions .places-main-content .places-info p {
+    font-size: 0.8rem;
+}
+
+.popular-attractions .places-main-content .places-info img {
+    height: 16px;
+}
+
+.popular-attractions .places-main-content .places-info {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.places-rating {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.popular-attractions {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    border-radius: var(--border-radius-card-mobile);
+}
+
+#homepage-heading {
+    text-align: center;
+    font-size: 5.8vmin;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#homepage-heading-1 {
+    text-align: center;
+    font-size: 5.8vmin;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#homepage-heading-2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 5.8vmin;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.places-dp .heading {
+    font-size: 0.9rem;
+    /* border-bottom: 1px solid black; */
+    padding-bottom: 0.7rem;
+}
+
+.places-dp .heading p {
+    color: #858585;
+}
+
+
+
+.popular-attractions .places-wrapper .main-img {
+    width: 100%;
+    /* padding: 1rem; */
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* popular attraction desktop map */
+
+.gorakhpur-map iframe {
+    width: 100%;
+    display: none;
+}
+
+
+/* events and fests */
+
+.events-and-fests-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: var(--border-radius-card-mobile);
+    padding: 1rem 0.7rem;
+}
+
+.events-and-fests-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.events-and-fests-info p {
+    display: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.events-and-fests-info h2 {
+    margin: var(--margin-homepage-heading);
+}
+
+.events-and-fests-section h2 {
+    text-align: center;
+}
+
+.events-and-fests-section .main-wrapper {
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-card-mobile);
+}
+
+
+/* .events-and-fests .main-wrapper img {
+    border-radius: 0.6rem;
+    width: 35vmin;
+} */
+
+/* .events-and-fests .main-wrapper p {
+    font: 0.7rem;
+} */
+
+/* .event-left,
+.event-right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+} */
+
+.event-left img,
+.event-right img {
+    width: 40vw;
+}
+
+.event-left p,
+.event-right p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+
+
+/* ------------exclusive in gorakhpur------------- */
+
+
+
+.terracota img,
+.geeta-press img {
+    border-radius: 0.6rem;
+    width: 100%;
+}
+
+.exclusive-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.exclusive-info .para-info {
+    text-align: center;
+    font-weight: 600;
+}
+
+.exclusive-counter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.counter-1,
+.counter-2,
+.counter-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 0.1rem; */
+    padding: 1rem 3rem;
+    border-radius: 0.7rem;
+    background-color: #f7f7f7;
+    color: grey;
+    font-size: 1rem;
+    font-weight: 600;
+    /* box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.counter-1 p,
+.counter-2 p,
+.counter-3 p {
+
+    white-space: nowrap;
+
+}
+
+.exclusive-counter .counter {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ec008e;
+}
+
+.exclusive-main-body #homepage-heading {
+    margin: var(--margin-homepage-heading);
+
+}
+
+.exclusive {
+    background-color: white;
+    padding: 1rem 0.7rem 2rem 0.7rem;
+    border-radius: var(--border-radius-card-mobile);
+}
+
+.exclusive .read-more {
+    background-color: #ec008e;
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.6rem;
+
+}
+
+.exclusive .read-more-desktop {
+
+    background-color: #ec008e;
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.6rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.terracota {
+    margin-bottom: 4rem;
+}
+
+.terracota,
+.geeta-press {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* health education */
+
+
+.health-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.health-education-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education,
+.health {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: var(--card-padding-mobile);
+    border-radius: var(--border-radius-card-mobile);
+}
+
+.education {
+    margin-bottom: 1rem;
+}
+
+.education img,
+.health img {
+    width: 40vw;
+}
+
+.health-education-wrapper .box-1,
+.health-education-wrapper,
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.health-education-info p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.health-education-info h2 {
+    margin: var(--margin-homepage-heading);
+}
+
+
+
+
+/* =============Health education============= */
+
+/* =======how to reach ============= */
+
+.reach-and-trending-wrapper {
+    margin-top: 3rem;
+}
+
+.reach-and-trending .reach {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.reach-and-trending .reach img {
+    width: 100%;
+}
+
+.reach-and-trending .reach p {
+    background-color: rgba(255, 176, 176, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 15vmin;
+    font-size: 1.4rem;
+}
+
+.reach-and-trending .reach .explore {
+    background-color: #ffffff;
+    color: #ec008e;
+    font-weight: 700;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.6rem;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    bottom: 17vmin;
+}
+
+.reach-desktop {
+    display: none;
+}
+
+/* =======how to reach ============= */
+
+
+
+
+/* ============Trending news section============= */
+
+.trending {
+    background-color: white;
+    box-shadow: 1px 1px 30px 0px #dcdcdc;
+    ;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+
+.trending .trending-heading {
+    margin-bottom: 1.6rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 0.7rem;
+}
+
+.trending .trending-heading h2 {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+}
+
+.trending-main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* gap: 1rem; */
+}
+
+.trending-main-content {
+    padding: 1rem;
+    /* overflow: hidden; */
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.trending .trending-card {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.trending .trending-card img {
+    border-radius: 0.5rem;
+    height: 5rem;
+
+}
+
+.trending .trending-card p {
+    font-size: 0.7rem;
+}
+
+/* ==============Trending slideshow======== */
+.trending .swiper {
+    width: 100%;
+    height: 19rem;
+}
+
+.trending .swiper-slide {
+    /* text-align: center; */
+    /* font-size: 18px; */
+    /* background: #fff; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 0;
+}
+
+
+
+
+/* --------Sidebar menu--------- */
+.sidebar-menu-wrapper {
+    margin-top: 1rem;
+    position: sticky;
+    top: 5.4rem;
+    z-index: 2;
+    display: none;
+}
+
+.sidebar-menu {
+    box-shadow: 1px 1px 30px 0px #dcdcdc;
+    background-color: #F9FEFF;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+
+}
+
+.sidebar {
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.sidebar:hover {
+    background-color: #f1efff;
+    cursor: pointer;
+}
+
+.sidebar-9 {
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: #B75EC2;
+    color: white;
+}
+
+/* ------------cm yogi info----------- */
+.container-yogi {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.yogi-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 0.7rem;
+    /* padding-bottom: 1rem; */
+    border-radius: var(--border-radius-card-mobile);
+}
+
+.yogi-wrapper .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* width: 90%; */
+    font-weight: 600;
+    background-color: white;
+    border-radius: var(--border-radius-card-mobile);
+    padding: 0.7rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.yogi-wrapper img {
+
+    width: 100%;
+}
+
+.yogi-wrapper .main-content p {
+    text-align: center;
+    color: rgb(55, 55, 55);
+    width: 90%;
+    margin: auto;
+    font-size: 0.95rem;
+}
+
+.yogi-wrapper .main-content .main-para {
+    color: #ec008e;
+}
+
+/* ================Developer-team=========== */
+.container-developer {
+    width: 65%;
+    margin-inline: auto;
+}
+
+.developer-team-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.developer-team-intro {
+    text-align: center;
+}
+
+.developer-team-section #homepage-heading {
+    margin: var(--margin-homepage-heading);
+}
+
+.developer-team-section p {
+    font-weight: 600;
+    color: rgb(81, 81, 81);
+}
+
+.developer-team-wrapper {
+    margin-top: 3rem;
+}
+
+.developer-image-background {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+    /* Set the height of the parent div */
+    /* background-color: #ffa000; */
+
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid black;
+}
+
+.developer-image-background-1 {
+    background: linear-gradient(to top, #FFA000, #FFC600);
+}
+
+.developer-image-background-2 {
+    background: linear-gradient(to top, #ff653a, #FFbdad);
+}
+
+.developer-image-background-3 {
+    background: linear-gradient(to top, #01d199, #82f7cf);
+}
+
+.developer-image-background-4 {
+    background: linear-gradient(to top, #Fe8362, #FFbdad);
+}
+
+.developer-image-background-5 {
+    background: linear-gradient(to top, #FFA000, #FFC600);
+}
+
+.developer-image-background-6 {
+    background: linear-gradient(to top, #00b585, #56ffc4);
+}
+
+
+.developer-image-background img {
+    height: 120%;
+    /* width: 100%; */
+
+}
+
+.developer-info {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.developer-info .special-mention {
+    color: #525252;
+    font-size: 0.8rem;
+}
+
+.developer-info h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.developer-info p {
+    font-size: 0.8rem;
+    color: #ff0000;
+    font-weight: 600;
+}
+
+
+/* ================Developer-team=========== */
+/* ===============slideshow================ */
+.slideshow .swiper {
+    width: 100%;
+    height: 180px;
+}
+
+.slideshow .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow {
+
+    margin-top: 1.5rem;
+    border-radius: 1.1rem;
+    overflow: hidden;
+
+}
+
+.slideshow img {
+    width: 100%;
+    border-radius: 1.1rem;
+}
+
+.swiper-pagination {}
+
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: white;
+
+}
+
+/* ===============slideshow================ */
+/* ===============footer-section============ */
+
+.footer-section {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    background-color: #f1efff;
+}
+
+.footer-section .footer-logo {
+    height: 40px;
+}
+
+.footer-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-flex-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-flex-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+}
+
+.footer-quicklinks p {
+    /* font-weight: 400; */
+    font-size: 1rem;
+    color: rgb(119, 119, 119);
+}
+
+.email-id img {
+    width: 22px;
+}
+
+.email-id-1,
+.email-id-2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.4rem;
+}
+
+.contact-box {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.contact-box img {
+    width: 22px;
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+}
+
+
+
+/* .slideshow .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* ============Responsive============== */
+@media only screen and (min-width: 768px) {
+
+    /* nav bar */
+    .container {
+        width: 80%;
+    }
+
+    .nav-bar .middle {
+        display: flex;
+    }
+
+    .left .nav-logo {
+        display: none;
+    }
+
+    .right .language-button {
+        display: none;
+    }
+
+    /* welcome section */
+    .welcome-section {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        background-color: #ffffff;
+        padding: var(--top-bottom-padding-big-desktop) var(--right-left-padding-big-desktop);
+        border-radius: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .welcome-message {
+        flex-basis: 60%;
+    }
+
+    .welcome-message h2 {
+        font-size: var(--font-heading-primary-desktop);
+        font-weight: 600;
+        text-align: left;
+        margin: 0;
+        background-clip: text;
+        color: rgb(0, 0, 0);
+    }
+
+    .welcome-message p {
+        font-weight: 600;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 1rem;
+        margin: 0rem;
+        text-align: left;
+        color: #21191B;
+
+    }
+
+    .welcome-message-heading {
+        display: block;
+    }
+
+    .welcome-message-container {
+        display: flex;
+        align-items: normal;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .slideshow .swiper {
+        width: 100%;
+        /* margin: auto; */
+        height: 14rem;
+    }
+
+    .slideshow {
+        margin-top: 0;
+        border-radius: 2rem;
+        overflow: hidden;
+        flex-basis: 40%;
+    }
+
+    .slideshow img {
+        width: 100%;
+        border-radius: 2rem;
+
+    }
+
+    /* introduction section */
+    .introduction-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
+
+    .introduction-container h2 {
+        margin: 0;
+        margin-bottom: var(--gap-small);
+        /* width: 90vmin; */
+        font-size: 1.9rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .introduction-container img {
+        width: 23rem;
+    }
+
+    .introduction {
+
+        margin-top: var(--margin-top-desktop);
+        border-radius: var(--border-radius-card-desktop);
+        padding: var(--top-bottom-padding-big-desktop) var(--right-left-padding-big-desktop);
+    }
+
+    /* popular attractions */
+    .popular-attractions {
+        display: flex;
+    }
+
+    #homepage-heading {
+        text-align: center;
+        font-size: var(--font-heading-secondary-desktop);
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .gorakhpur-map iframe {
+        width: 25vw;
+        height: 20rem;
+        display: block;
+        border-radius: var(--border-radius-card-desktop);
+    }
+
+    .gorakhpur-map {
+        overflow: hidden;
+        border-radius: var(--border-radius-card-desktop);
+
+    }
+
+    .places-container {
+        background-color: white;
+        border-radius: var(--border-radius-card-mobile);
+    }
+
+    .places-container .swiper {
+        width: 50vw;
+        /* height: 19rem; */
+        margin: 0;
+
+    }
+
+    .popular-attractions {
+
+        background-color: transparent;
+        padding: 0;
+        border-radius: var(--border-radius-card-desktop);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .places-container {
+        background-color: white;
+        border-radius: var(--border-radius-card-desktop);
+        padding: var(--top-bottom-padding-big-desktop) var(--right-left-padding-big-desktop);
+
+    }
+
+    #homepage-heading-1 {
+        color: rgb(77, 77, 77);
+        text-align: center;
+        font-size: 3.1vmin;
+        font-weight: 700;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+
+
+    .popular-attractions .places-main-content h2 {
+        white-space: nowrap;
+    }
+
+    /* events and fests */
+    .events-and-fests-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--gap-large);
+        background-color: #ffffff;
+        border-radius: var(--border-radius-card-desktop);
+        padding: var(--top-bottom-padding-big-desktop) var(--right-left-padding-big-desktop);
+    }
+
+    .event-left img,
+    .event-right img {
+        width: 17vw;
+    }
+
+    .event-left p,
+    .event-right p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .events-and-fests-info p {
+        display: block;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    /* exclusive */
+    .terracota,
+    .geeta-press {
+        flex-direction: row;
+        gap: var(--gap-large);
+        background-color: white;
+        align-items: center;
+        padding: var(--top-bottom-padding-big-desktop) var(--right-left-padding-big-desktop);
+        border-radius: var(--border-radius-card-desktop);
+    }
+
+    .terracota img,
+    .geeta-press img {
+        border-radius: 2rem;
+        width: 100%;
+    }
+
+    .exclusive-counter {
+
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .exclusive .read-more {
+        display: none;
+    }
+
+    .exclusive {
+        background-color: transparent;
+        padding: 0;
+        border-radius: var(--border-radius-card-mobile);
+    }
+
+    #homepage-heading-2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .terracota {
+        margin-bottom: 2rem;
+    }
+
+    .exclusive-main-body #homepage-heading {
+        margin: 1rem 0 2rem 0;
+    }
+
+    /* health education section */
+    .health-education-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--gap-large);
+    }
+
+    .education img,
+    .health img {
+        width: 17vw;
+    }
+
+    .education {
+        margin-bottom: 0;
+    }
+
+    .health-education-wrapper .box-1,
+    .health-education-wrapper,
+    .box-2 {
+        font-size: 1rem;
+    }
+
+    /* reach and trending section  */
+
+    /* reach desktop mode */
+    .reach-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: white;
+        border-radius: var(--border-radius-card-desktop);
+
+    }
+
+    .air,
+    .road,
+    .train {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+        border-radius: var(--border-radius-card-mobile);
+        font-weight: 600;
+        width: 20vw;
+        padding: 0.5rem;
+    }
+
+    .air p,
+    .road p,
+    .train p {
+        font-weight: 600;
+    }
+
+    .reach-and-trending-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        gap: var(--gap-large);
+    }
+
+    .reach-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        width: 60%;
+        background-color: white;
+        border-radius: var(--border-radius-card-desktop);
+    }
+
+    .trending {
+        margin: 0;
+        width: 37%;
+        border-radius: var(--border-radius-card-desktop);
+        padding: 2rem 2rem;
+    }
+
+    .reach-and-trending .reach {
+        width: 20vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .trending .swiper {
+        width: 100%;
+        height: 19rem;
+    }
+
+    .reach-and-trending .reach img {
+        height: 20.4rem;
+    }
+
+    .reach-and-trending .reach p {
+        top: 9vmin;
+    }
+
+    .reach-and-trending .reach .explore {
+        bottom: 8vmin;
+    }
+
+    .trending .trending-card p {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    /* yogi section */
+    .yogi-wrapper {
+        flex-direction: row;
+        padding: var(--top-bottom-padding-big-desktop) var(--right-left-padding-big-desktop);
+        border-radius: var(--border-radius-card-desktop);
+    }
+
+    .yogi-wrapper img {
+        /* height: 323px; */
+        /* width: auto; */
+    }
+
+    .container-yogi {
+        width: 70%;
+    }
+
+    .yogi-wrapper .main-content {
+        height: 323px;
+        overflow: scroll;
+    }
+
+    /* developer section */
+    .developer-team {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+
+        /* .developer-info {
+        width: 100%;
+    } */
+        
+    }
+    .container-developer {
+        width: 80%;
+        /* margin-inline: auto; */
+    }
+
+}

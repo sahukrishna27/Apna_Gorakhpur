@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+html {
+    background-color: #ececec;
+}
+p{
+    font-weight: 600;
+}
+/* h2{
+    font-size: 1.2rem;
+} */
+
+:root {
+    --font-heading-primary-desktop: 2.8rem;
+    --font-heading-secondary-desktop: 2.5rem;
+    --top-bottom-padding-big-desktop: 1rem;
+    --right-left-padding-big-desktop: 1.5rem;
+    --card-padding-mobile: 0.7rem;
+    --margin-top-desktop: 2rem;
+    --border-radius-card-mobile: 1rem;
+    --border-radius-card-desktop: 2.5rem;
+    --margin-homepage-heading: 1rem 0;
+    --gap-small: 1rem;
+    --gap-large: 2rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+.margin-top{
+    margin-top: 3rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* ==============Imtroduction main image section ============= */
+.mainimg{
+    width: 100%;
+    margin-top: 0.6rem;
+    border-radius: 1rem;
+}
+/* ============How to reach heading======== */
+
+.introduction-heading{
+background-color: #ED4C6E;
+text-align: center;
+padding: 0.6rem;
+border-radius: 0.5rem;
+color: white;
+font-weight: 600;
+width: 50%;
+margin: auto;
+position: relative;
+bottom: 1.35rem;
+
+}
+.active{
+    background-color: #ED4C6E;
+    color: rgb(255, 255, 255);
+}
+/* ==========Introduction paragraph section============= */
+
+.introduction-paragraph{
+    margin-top: 1.1rem;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-card-mobile);
+    padding: 2rem 1rem;
+}
+.introduction-paragraph h2{
+    margin-bottom: 1rem;
+    color: #E40066;
+}
+.introduction-paragraph .para-1{
+    /* font-weight: 500; */
+    margin-bottom: 0.7rem;
+    }
+.introduction-paragraph .para-2{
+/* font-weight: 500; */
+color: rgb(85, 85, 85);
+}
+
+/* ============ Content switcher buttons========= */
+
+.content-switch-button-wrapper{
+    background-color: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-switch-button-wrapper .button{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 3.7vmin;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+}
+/*  ==========Start of main content below buttons========  */
+
+.main-content-wrapper .informtion-wrapper h2{
+    margin-bottom: 1.5rem;
+}
+.main-content-wrapper .informtion-wrapper .para-1{
+    margin-bottom: 0.9rem;
+}
+.main-content-wrapper{
+    display: none;
+    background-color: white;
+    margin-top: 1.1rem;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-card-mobile);
+    padding: 2rem 1rem;
+}
+.show-content{
+    display: block;
+}
+.main-content  {
+margin-bottom: 1rem;
+}
+.introduction-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: var(--border-radius-card-mobile);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.information{
+    display: flex;
+    gap: 0.8rem;
+}
+.map{
+    border-top: 1px solid grey;
+}
+.map p{
+    text-align: center;
+    font-weight: 600;
+}
+.place_map{
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 0px rgba(35, 35, 35, 0.3);
+  
+
+}
+.map-wrapper {
+    padding: 2rem 0;
+}

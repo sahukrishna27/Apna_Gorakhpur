@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fe2679;
+  background-image: linear-gradient(#ffffff3a 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff3a 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+::selection{
+  color: #fff;
+  background: #ff692e;
+}
+.wrapper{
+  width: 93vmin;
+  max-width: 450px;
+  padding: 40px 30px 20px 30px;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 450px) {
+  .wrapper{
+    width:90%
+  }
+}
+.wrapper header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  }
+
+.wrapper header img{
+  height: 40px;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+.wrapper header h1{
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(56, 56, 56);
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+.wrapper header p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #525252;
+  align-self: flex-start;
+}
+.wrapper form{
+  margin: 25px 0;
+}
+form .field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+.submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  caret-color: #E8226D;
+  border-radius: 9px;
+  border: 2px solid #E8226D;
+  transition: all 0.2s ease;
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #E8226D;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.submit:hover{
+  background: #ff428b;
+  /* font-size: 19px; */
+}
+form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 15px;
+  background: none;
+  caret-color: #E8226D;
+  border-radius: 6px;
+  border: 1.5px solid #bfbfbf;
+  transition: all 0.2s ease;
+  
+}
+form .field input:focus,
+form .field.valid input{
+  border-color: #E8226D;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #E8226D;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 17px;
+  pointer-events:none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #E8226D;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #E8226D;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 15px;
+}
+form .field .error-txt{
+  color: #E8226D;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -1000px;
+}
+.wrapper a{
+  color: #E8226D;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+@media only screen and (max-width: 300px){
+  .wrapper header h1{
+    display: none;
+    
+  }.wrapper header{
+    justify-content: center;
+  }
+}
